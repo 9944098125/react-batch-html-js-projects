@@ -5,9 +5,9 @@ let quote = "Fetching a random quote...";
 // Function to fetch a random quote from the Quotable API
 async function getRandomQuote() {
 	try {
-		const response = await fetch("https://api.quotable.io/random");
+		const response = await fetch("https://dummyjson.com/quotes/random");
 		const data = await response.json();
-		quote = data.content;
+		quote = data.quote;
 		document.getElementById("quote").textContent = `Quote : "${quote}"`;
 	} catch (error) {
 		console.error("Failed to fetch a random quote:", error);
