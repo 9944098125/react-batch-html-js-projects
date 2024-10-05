@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Learn HTML</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+		<link
+			rel="icon"
+			href="https://www.shutterstock.com/shutterstock/photos/1180085668/display_1500/stock-photo-abstract-blur-beautiful-sparklers-motion-by-wind-couple-man-and-woman-hand-holding-burning-sparkle-1180085668.jpg" />
+		<script src="main.js"></script>
+		<style>
+			.input-container {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+			#ic {
+				display: flex;
+				flex-direction: column;
+				align-items: center !important;
+				gap: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="bg-green-600 w-full h-screen">
+			<img src="../Mountains/bg-mountains.jpg" alt="Mountain" />
+			<div
+				style="display: flex; flex-direction: column; align-items: flex-start"
+				id="ic"
+				class="input-container">
+				<label for="nameField">Name</label>
+				<input
+					type="text"
+					name="name"
+					id="nameField"
+					placeholder="Enter Name..." />
+			</div>
+		</div>
+	</body>
+</html>

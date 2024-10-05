@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="icon" href="./typing-logo.png" />
+		<title>Speed Typing Test</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/a87367b057.js"
+			crossorigin="anonymous"
+		></script>
+		<style>
+			body {
+				font-family: "Croissant One", cursive;
+				margin: 0 0;
+				padding: 0 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div style="display: flex; align-items: center; justify-content: center">
+				<!-- <i class="fa-sharp fa-light fa-timer"></i> -->
+				<div id="timer">60</div>
+			</div>
+			<div class="quote-container">
+				<div id="quote">Fetching a random quote...</div>
+			</div>
+			<div class="textarea-container">
+				<textarea
+					id="input"
+					rows="6"
+					oninput="startTimer(); checkQuote()"
+					placeholder="Type here..."
+				></textarea>
+			</div>
+			<div id="result" class="hidden"></div>
+			<button type="reset" onclick="resetTimer()">Reset</button>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>
