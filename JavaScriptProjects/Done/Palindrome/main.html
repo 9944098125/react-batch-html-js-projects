@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Palindrome</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body class="body">
+		<div
+			id="parent"
+			class="w-full h-screen flex flex-col justify-center items-center">
+			<h1 class="text-5xl mb-5 font-bold text-blue-800 underline">
+				Palindrome
+			</h1>
+			<div id="inputContainer" class="w-1/2">
+				<input
+					type="text"
+					id="input"
+					class="w-full rounded-lg h-[45px] border outline-none py-1 px-2 border-blue-800 shadow-lg shadow-blue-200" />
+				<button
+					onclick="checkPalindrome()"
+					class="w-full mt-5 h-[45px] text-white font-bold hover:bg-blue-800 bg-blue-600 border-none rounded-lg">
+					Check Palindrome
+				</button>
+				<p id="resultText" class="hidden text-3xl font-semibold text-white"></p>
+			</div>
+		</div>
+		<script src="./main.js"></script>
+	</body>
+</html>
